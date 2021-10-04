@@ -19,7 +19,7 @@
         
         {"filter": {
           "field": "areaName", 
-          "oneOf": ["Redcar and Cleveland", "Surrey Heath", "Wandsworth"]}
+          "oneOf": ["Bradford", "East Dunbartonshire", "Barnsley"]}
           }
   
   
