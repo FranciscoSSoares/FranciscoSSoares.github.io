@@ -10,7 +10,7 @@
       "color": "black"
     },
     
-     "data": {
+     "XXdata": {
       "url": "https://raw.githubusercontent.com/FranciscoSSoares/FranciscoSSoares.github.io/main/ltla_2021-10-03.csv",
       "format": {"type": "csv"}
     },
