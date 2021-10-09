@@ -2,15 +2,15 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
     "title": {
-      "text": "Covid-19 cases UK",
-      "subtitle":"By Local Authority",
+      "text": "Covid Cases in the UK",
+      "subtitle":"by local authority",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
       "color": "black"
     },
     
-     "XXdata": {
+     "data": {
       "url": "https://raw.githubusercontent.com/FranciscoSSoares/FranciscoSSoares.github.io/main/ltla_2021-10-04.csv",
       "format": {"type": "csv"}
     },
@@ -27,7 +27,7 @@
     
     
     "height": 300,
-    "width": 310,
+    "width": 300,
      
     "mark": {"type": "line", "point": false},
    
@@ -41,7 +41,7 @@
       },
   
       "y": {
-        "field": "newCasesByPublishDateRollingRate",
+        "field": "newCasesBySpecimenDate",
         "type": "quantitative",
         "title": null,
         "axis": {"grid": false}
@@ -51,7 +51,7 @@
         "field": "areaName",
         "type": "nominal",
         "scale": {"scheme": "set1"},
-        "title": "",
+        "title": null,
         "legend": {
           "orient": "top-left", 
           "fillColor": "#FcFdFd"}
