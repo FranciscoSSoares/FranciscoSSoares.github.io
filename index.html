@@ -7,6 +7,7 @@
 
 <head>
 
+<link rel="stylesheet" href="index.css">
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
@@ -21,42 +22,57 @@
 <!-- ///////////////////  START BODY //////////////////////////////////// -->
 
 <body>
+  <h1>António Francisco Soares</h1>
+  <h2>Data Science - Portfolio</h2>
+
+<!--Charts Start-->
+<h3> Week 1</h3>
+
+  <p>These three charts are taken off rapidcharts.io, as a starting point for
+    the class
+  </p>
 <!--Chart 1 -->
   <div class="chart" id="chart1">
       <script>
-        var myChart1 = "chart1_covidUKRegions.json";
+        var myChart1 = "charts/chart1_covidUKRegions.json";
         vegaEmbed('#chart1', myChart1);
       </script>
   </div>
-
+<!--Using empty paragraphs in order to create spacing between charts-->
+<p> </p>
 <!--Chart 2 -->
 <div class="chart" id="chart2">
     <script>
-      var myChart2 = "chart2_ukProductivity.json";
+      var myChart2 = "charts/chart2_ukProductivity.json";
       vegaEmbed('#chart2', myChart2);
     </script>
 </div>
-  
+<p> </p>
 <!--Chart 3 -->
   <div class="chart" id="chart3">
       <script>
-        var myChart3 = "crypto.json";
+        var myChart3 = "charts/chartUS1.json";
         vegaEmbed('#chart3', myChart3);
       </script>
   </div>
-  
-  <!--Chart 4 -->
+  <h3>Week 2</h3>
+  <p>These are two Covid charts, the first one updated using an API
+    and the second using a local CSV file
+  </p>
+ 
+ <!--Chart 4 -->
   <div class="chart" id="chart4">
       <script>
-        var myChart4 = "chartapi.json";
+        var myChart4 = "charts/chartapi.json";
         vegaEmbed('#chart4', myChart4);
       </script>
   </div>
-  
+  <p> </p>
+
 <!--Chart 5 -->
   <div class="chart" id="chart5">
       <script>
-        var myChart5 = "chartlocal.json";
+        var myChart5 = "charts/chartlocal.json";
         vegaEmbed('#chart5', myChart5);
       </script>
   </div>
