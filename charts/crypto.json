@@ -8,7 +8,6 @@
   "subtitleFontStyle":"italic",
   "subtitleFontSize":10,
   "anchor": "start",
-  "color": "#179fdb",
   "subtitleColor":"#179fdb"},
 
 "config": {
@@ -18,7 +17,7 @@
 
 
 
-  "width":290,
+  "width":300,
   "height":300,
 
 
@@ -30,8 +29,7 @@
   "mark": {
   "type": "line",
   "point": false,
-  "interpolate": "linear",
-  "color":"#f4c245"
+  "interpolate": "linear"
 },
 
 
@@ -76,7 +74,6 @@
       "grid": false,
       "labelSeparation": 10,
       "domainColor":"dimgrey",
-      "labelColor":"#00a767",
       "tickColor":"pink",
       "gridColor":"dimgrey"
     }},
@@ -88,7 +85,6 @@
     "axis": {
       "grid": false,
       "domainColor":"dimgrey",
-      "labelColor":"#00a767",
       "tickColor":"pink",
       "gridColor":"dimgrey",
       "format":"$,.5"}
