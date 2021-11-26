@@ -13,12 +13,12 @@
     },
     
     "data": {
-      "url": "data/cum.csv",
+      "url": "https://raw.githubusercontent.com/FranciscoSSoares/FranciscoSSoares.github.io/main/data/cum.csv",
       "format": {"type": "csv"}
     },
     
     
-    "height": 280,
+      "height": 280,
     "width": 300,
     "mark": {
       "type": "line",
