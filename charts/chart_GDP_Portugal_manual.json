@@ -1,0 +1,30 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Portuguese GDP, current prices",
+      "subtitle":"Millions of Euros, Source: Eurostat",
+      "subtitleFontStyle":"italic",
+      "anchor": "start",
+      "color": "black"
+    },
+    "height": 300,
+    "width": 300,
+    "data": {
+      "values": [
+        {"date": "2019-Q4", "GDP": 54312.6}, {"date": "2020-Q1", "GDP": 52394.1},
+        {"date": "2020-Q2", "GDP": 45295.3}, {"date": "2020-Q3", "GDP": 51109.2}, {"date": "2020-Q4", "GDP": 51289}
+      ]
+    },
+    "mark": {
+      "type": "bar",
+      "interpolate": "monotone",
+      "point": true,
+      "color": "royalblue"
+    },
+    "encoding": {
+      "x": {"field": "date", "type": "nominal", "axis": {"labelAngle": 0, "grid": false}, "title": "Time"},
+      "y": {"field": "GDP", "type": "quantitative","axis": {"grid": false}, "title": "Gross Domestic Product"}
+    }
+  
+  }
+  
