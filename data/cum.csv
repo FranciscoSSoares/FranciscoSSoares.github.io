@@ -1,6 +1,6 @@
 areaCode,areaName,areaType,date,cumDeaths28DaysByPublishDate
-K02000001,United Kingdom,overview,2021-11-26,144593
-K02000001,United Kingdom,overview,2021-11-25,144433
+K02000001,United Kingdom,overview,2021-11-26,400000
+K02000001,United Kingdom,overview,2021-11-25,300000
 K02000001,United Kingdom,overview,2021-11-24,144286
 K02000001,United Kingdom,overview,2021-11-23,144137
 K02000001,United Kingdom,overview,2021-11-22,143972
@@ -225,7 +225,7 @@ K02000001,United Kingdom,overview,2021-04-18,127270
 K02000001,United Kingdom,overview,2021-04-17,127260
 K02000001,United Kingdom,overview,2021-04-16,127225
 K02000001,United Kingdom,overview,2021-04-15,127191
-K02000001,United Kingdom,overview,2021-04-14,127161
+K02000001,United Kingdom,overview,2021-04-14,5
 K02000001,United Kingdom,overview,2021-04-13,127123
 K02000001,United Kingdom,overview,2021-04-12,127100
 K02000001,United Kingdom,overview,2021-04-11,127087

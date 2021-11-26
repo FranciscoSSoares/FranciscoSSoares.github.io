@@ -38,7 +38,7 @@
         }
       },
       "y": {
-        "field": "cumDeaths28DaysByDeathDate",
+        "field": "cumDeaths28DaysByPublishDate",
         "type": "quantitative",
         "title": "",
         "axis": {"grid": false}
