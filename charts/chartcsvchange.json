@@ -4,8 +4,8 @@
     "description": "Productivity UK",
   
      "title": {
-      "text": "UK productivity, 1971-2021",
-      "subtitle":"Labour productivity. Output per hour worked, 2018==100. Source: ONS",
+      "text": "Cumulative deaths from COVID-19 UK",
+      "subtitle":"CSV with modification, Source: UK Gov",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -40,7 +40,7 @@
       "y": {
         "field": "cumDeaths28DaysByPublishDate",
         "type": "quantitative",
-        "title": "",
+        "title": "Deaths",
         "axis": {"grid": false}
       }
     }
