@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Decline in employment rate per age group",
+    "subtitle":"Year to December 2020 to February 2021, Source: ONS",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+      {"Age Group": "50 to 55", "Percentage Point Change": -2.6}, {"Age Group": "55 to 59", "Percentage Point Change": -0.8}, 
+      {"Age Group": "60 to 64", "Percentage Point Change": -0.5}, {"Age Group": "65 and over", "Percentage Point Change": -1}
+    ]
+  },
+  "mark": "bar",
+  "width" : 250,
+  "height": 250,
+  "encoding": {
+    "x": {"field": "Age Group", "type": "nominal", "axis": {"labelAngle": 0}},
+    "y": {"field": "Percentage Point Change", "type": "quantitative"}
+  }
+}
