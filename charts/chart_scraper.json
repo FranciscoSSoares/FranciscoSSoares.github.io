@@ -1,0 +1,43 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "title": {
+      "text": "Safest Countries in the World 2021",
+      "subtitle":"Lower score signals higher safety, Source: World Peace Index ",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+     "data": {
+      "url": "https://raw.githubusercontent.com/FranciscoSSoares/FranciscoSSoares.github.io/main/data/safest_cntr.csv"
+    },
+    
+    "height": 300,
+    "width": 300,
+     
+    "mark": {"type": "bar", 
+    "point": false,
+    "clip": true,
+    "color": "lightskyblue"
+    },
+   
+    "encoding": {
+  
+      "x": {
+        "field": "Country",
+        "type": "nominal",
+        "title": null,
+        "axis": {"grid": false},
+        "sort": {"field": ["Country"], "order": ["ascending"]}
+      },
+  
+      "y": {
+        "field": "Score",
+        "type": "quantitative",
+        "title": "Score",
+        "axis": {"grid": false}
+      }
+  }
+  }
