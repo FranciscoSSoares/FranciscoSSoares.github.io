@@ -1,0 +1,53 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "title": {
+      "text": "Different Countries' Hapiness in 2020",
+      "subtitle":"Retreieved from Wikipedia. Source: World happiness report ",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+     "data": {
+      "url": "https://raw.githubusercontent.com/FranciscoSSoares/FranciscoSSoares.github.io/main/data/6_countries.csv"
+    },
+    
+    "height": 300,
+    "width": 300,
+     
+    "mark": {"type": "bar", 
+    "point": false,
+    "clip": true
+    },
+    
+   
+    "encoding": {
+  
+      "x": {
+        "field": "Country or region",
+        "type": "nominal",
+        "title": null,
+        "axis": {"grid": false},
+        "sort": {"field": ["Country"], "order": ["ascending"]}
+      },
+  
+      "y": {
+        "field": "Score",
+        "type": "quantitative",
+        "title": "Score",
+        "axis": {"grid": false}
+      },
+      "color": {
+        "field": "Country or region",
+        "type": "nominal",
+        "legend": null,
+        "scale": {"domain": ["Switzerland", "United Kingdom", "United States", "Brazil", "Russia", "China"],"range": ["red", "#012169", "#0090FF", "#009C3B", "#DA291C", "black"]}
+      },
+      "tooltip": [
+        {"field": "Country or region", "type": "nominal", "title": "Country"},
+        {"field": "Score", "type": "quantitative", "title": "Score"}
+      ]
+  }
+  }
