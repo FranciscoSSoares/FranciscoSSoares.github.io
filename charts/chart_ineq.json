@@ -1,0 +1,65 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "title": {
+      "text": "Inequality in Developed and Developing Countries",
+      "subtitle":"Source: World Bank",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+     "data": {
+      "url": "https://raw.githubusercontent.com/FranciscoSSoares/FranciscoSSoares.github.io/main/data/6_gini_index.csv",
+      "format": {"type": "csv"}
+    },
+  
+     "transform":[
+        
+        {"filter": {
+          "field": "Country Name", 
+          "oneOf": ["Brazil", "Switzerland", "China", "United Kingdom", "Russia", "United States"]}
+          }
+  
+  
+      ],
+    
+    
+    "height": 300,
+    "width": 300,
+     
+    "mark": {"type": "line", "point": true},
+   
+    "encoding": {
+
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": null,
+        "axis": {"grid": false}
+      },
+  
+      "y": {
+        "scale": {"domain": [15, 55]},
+        "field": "Gini",
+        "type": "quantitative",
+        "title": "Gini Index",
+        "axis": {"grid": false}
+      },
+  
+      "color": {
+        "field": "Country Name",
+        "type": "nominal",
+        "scale": {"scheme": "set2"},
+        "title": "",
+        "legend": {
+          "orient": "bottom-right", 
+          "fillColor": "#FcFdFd"}
+      },
+    "tooltip": [
+        {"field": "Country Name", "type": "nominal", "title": "Country"},
+        {"field": "Gini", "type": "quantitative", "title": "Index Score (%)"}
+      ]
+  }
+  }
