@@ -3,7 +3,7 @@
     
     "title": {
       "text": "Different Countries' Hapiness in 2020",
-      "subtitle":"Retreieved from Wikipedia. Source: World happiness report ",
+      "subtitle":"Retreieved from Wikipedia. Source: World Happiness Report ",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
