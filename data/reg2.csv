@@ -1,66 +1,67 @@
 ,Country,Score,Inequality
-0,Iceland,1.1,26.1
-2,Denmark,1.256,28.7
-3,Portugal,1.2670000000000001,33.8
-4,Slovenia,1.315,24.2
-5,Austria,1.317,29.7
-6,Switzerland,1.3230000000000002,32.7
-7,Ireland,1.3259999999999998,31.4
-8,Czech Republic,1.329,24.9
-9,Canada,1.33,33.3
-12,Finland,1.402,27.4
-13,Norway,1.4380000000000002,27.0
-14,Sweden,1.46,28.8
-16,Croatia,1.48,30.4
-18,Hungary,1.494,30.6
-19,Belgium,1.496,27.4
-20,Netherlands,1.506,28.5
-21,Bhutan,1.51,37.4
-23,Poland,1.524,29.7
-24,Romania,1.53,36.0
-26,Bulgaria,1.577,40.4
-27,Mauritius,1.5919999999999999,36.8
-29,Estonia,1.6119999999999999,30.4
-30,Spain,1.621,34.7
-31,Italy,1.652,35.9
-32,United Kingdom,1.6580000000000001,35.1
-34,Latvia,1.686,35.6
-36,Lithuania,1.689,37.3
-38,Costa Rica,1.735,48.3
-39,North Macedonia,1.744,34.2
-41,Indonesia,1.7830000000000001,38.1
-43,Serbia,1.797,36.2
-46,Uruguay,1.817,39.5
-47,Albania,1.824,33.2
-48,Chile,1.831,44.4
-54,France,1.868,31.6
-57,Tanzania,1.892,40.5
-59,Moldova,1.909,25.9
-60,Cyprus,1.912,31.4
-63,Panama,1.919,49.9
-65,Greece,1.932,34.4
-66,Kazakhstan,1.936,27.5
-67,Argentina,1.945,41.1
-74,Paraguay,1.9969999999999999,48.5
-75,Kyrgyz Republic,1.9980000000000002,27.3
-80,Kosovo,2.017,29.0
-81,Dominican Republic,2.024,42.2
-85,Peru,2.0340000000000003,43.3
-87,Ecuador,2.044,44.7
-88,Georgia,2.0540000000000003,37.9
-92,Gabon,2.074,38.0
-93,Armenia,2.075,33.6
-104,Bolivia,2.14,44.6
-105,Djibouti,2.146,41.6
-109,El Salvador,2.184,38.0
-111,Lesotho,2.202,44.9
-112,Thailand,2.205,36.5
-116,Belarus,2.285,25.4
-123,Honduras,2.371,49.4
-127,Brazil,2.43,53.3
-130,Myanmar,2.457,30.7
-132,Zimbabwe,2.49,44.3
-142,Ukraine,2.66,26.0
-143,Colombia,2.694,49.7
-148,Turkey,2.843,41.4
-157,Somalia,3.2110000000000003,36.8
+0,Iceland,1.084,26.1
+2,Portugal,1.273,33.8
+3,Austria,1.2919999999999998,29.7
+4,Denmark,1.2990000000000002,28.7
+5,Canada,1.3319999999999999,33.3
+7,Slovenia,1.3730000000000002,24.2
+9,Switzerland,1.368,32.7
+10,Czech Republic,1.369,24.9
+11,Ireland,1.4169999999999998,31.4
+13,Finland,1.527,27.4
+14,Bhutan,1.604,37.4
+16,Netherlands,1.54,28.5
+17,Belgium,1.536,27.4
+18,Sweden,1.489,28.8
+19,Norway,1.504,27.0
+20,Hungary,1.5030000000000001,30.6
+23,Romania,1.528,36.0
+24,Mauritius,1.6159999999999999,36.8
+25,Bulgaria,1.631,40.4
+26,Chile,1.6030000000000002,44.4
+27,Croatia,1.6740000000000002,30.4
+28,Poland,1.6880000000000002,29.7
+31,Spain,1.5519999999999998,34.7
+32,Costa Rica,1.7,48.3
+33,Uruguay,1.703,39.5
+34,Latvia,1.671,35.6
+36,Estonia,1.716,30.4
+38,Italy,1.744,35.9
+39,Lithuania,1.824,37.3
+40,Indonesia,1.84,38.1
+44,United Kingdom,1.7890000000000001,35.1
+46,Panama,1.8219999999999998,49.9
+47,Cyprus,1.87,31.4
+49,Serbia,1.88,36.2
+50,Albania,1.92,33.2
+53,Tanzania,1.825,40.5
+59,France,1.869,31.6
+63,Kazakhstan,1.9580000000000002,27.5
+64,Greece,2.02,34.4
+65,North Macedonia,2.129,34.2
+67,Moldova,1.944,25.9
+70,Ecuador,1.952,44.7
+74,Argentina,2.012,41.1
+79,Peru,1.985,43.3
+83,Dominican Republic,2.11,42.2
+84,Bolivia,2.012,44.6
+85,Kosovo,2.02,29.0
+87,Paraguay,1.956,48.5
+94,Kyrgyz Republic,2.219,27.3
+95,Gabon,2.032,38.0
+96,Belarus,2.106,25.4
+98,Georgia,2.096,37.9
+102,Lesotho,2.065,44.9
+108,Djibouti,2.209,41.6
+112,El Salvador,2.252,38.0
+115,Brazil,2.195,53.3
+116,Thailand,2.285,36.5
+117,Armenia,2.258,33.6
+122,Honduras,2.193,49.4
+124,Myanmar,2.187,30.7
+127,United States,2.311,41.2
+131,Zimbabwe,2.2969999999999997,44.3
+142,Colombia,2.7539999999999996,49.7
+149,Ukraine,3.213,26.0
+151,Turkey,2.802,41.4
+162,Somalia,3.5189999999999997,36.8

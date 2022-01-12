@@ -1,0 +1,53 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "title": {
+      "text": "Safety and Inequality in 2017",
+      "subtitle": "Sources: Global Peace Index and World Bank",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "color": "black"
+    },
+    "height": 300,
+    "width": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/FranciscoSSoares/FranciscoSSoares.github.io/main/data/reg2.csv"
+    },
+    "selection": {
+      "paintbrush": {"type": "multi", "on": "mouseover", "nearest": true},
+      "grid": {"type": "interval", "bind": "scales"}
+    },
+    "mark": {"type": "circle", "color": "#5b92e5"},
+    "encoding": {
+      "x": {
+        "field": "Inequality",
+        "type": "quantitative",
+        "axis": {
+          "title": " Gini Index",
+          "grid": true,
+          "tickCount": 14,
+          "labelOverlap": "greedy"
+        }
+      },
+      "y": {
+        "field": "Score",
+        "type": "quantitative",
+        "axis": {"title": "Peace Index", "true": false}
+      },
+      "size": {
+        "condition": {
+          "selection": "paintbrush",
+          "value": 200,
+          "init": {"value": 100}
+        }
+      },
+      "tooltip": [
+        {"field": "Country", "type": "ordinal", "title": "Country"},
+        {
+          "field": "Inequality",
+          "type": "quantitative",
+          "title": "Gini Coefficient"
+        },
+        {"field": "Score", "type": "nominal", "title": "Peace Index"}
+      ]
+    }
+  }
