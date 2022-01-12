@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "title": {
-      "text": "Safety and Inequality in 2017",
+      "text": "Relationship between Safety and Inequality in 2017",
       "subtitle": "Sources: Global Peace Index and World Bank",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,

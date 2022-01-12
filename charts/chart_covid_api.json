@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
     "title": {
-      "text": "Covid Cases in the UK",
-      "subtitle":"by local authority, CSV used",
+      "text": "COVID-19 cases in the UK",
+      "subtitle":"New cases by publish date, API used",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -11,21 +11,19 @@
     },
     
      "data": {
-      "url": "https://raw.githubusercontent.com/FranciscoSSoares/FranciscoSSoares.github.io/main/data/ltla_2021-10-04.csv",
+      "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=newCasesByPublishDateRollingSum&format=csv",
       "format": {"type": "csv"}
     },
-  
+    
      "transform":[
         
         {"filter": {
           "field": "areaName", 
-          "oneOf": ["Bradford", "East Dunbartonshire", "Barnsley"]}
+          "oneOf": ["Bristol, City of", "Camden", "Maidstone"]}
           }
   
-  
       ],
-    
-    
+  
     "height": 300,
     "width": 300,
      
@@ -37,24 +35,24 @@
         "field": "date",
         "type": "temporal",
         "title": null,
-        "axis": {"grid": false}
+        "axis": {"grid": true}
       },
   
       "y": {
-        "field": "newCasesBySpecimenDate",
+        "field": "newCasesByPublishDateRollingSum",
         "type": "quantitative",
-        "title": null,
+        "title": "New Covid Cases",
         "axis": {"grid": false}
       },
   
       "color": {
         "field": "areaName",
         "type": "nominal",
-        "scale": {"scheme": "set1"},
+        "scale": {"scheme": "set2"},
         "title": null,
         "legend": {
           "orient": "top-left", 
-          "fillColor": "#FcFdFd"}
+          "fillColor": "#ffffff"}
       }
-  }
+    }
   }

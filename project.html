@@ -23,29 +23,82 @@
 
 <body>
   <h1>António Francisco Soares</h1>
-  <h2>The Implications of Inequality</h2>
+</span><a target=”_blank” href="https://franciscossoares.github.io/index.html" 
+style="color: #ffffff;">Click here to go back to my portfolio</a>
+  <h2>Data Science Project: Does Inequality Negatively Impact Human Well-being?</h2>
 
-  </span><a target=”_blank” href="https://franciscossoares.github.io/index.html" style="color: #ffffff;">Click here to go back to my portfolio</a>
+  <h3> Introduction and aims</h3>
 
-<p></p>
+  <p>The pandemic we are living in has been a disturbing shock to all economies. 
+      It has not only impacted the mental and physical health of many people around 
+      the world but also exacerbated inequalities around the world. Inequality even 
+      before this was seen as one of the most important and divisive issues in economics.
+       It is always assumed inequality is negative and that we must trade-off between it 
+       and growth.Given this I wanted to look at whether these claims translated empirically,
+        choosing to compare inequality to two major sources of human wellbeing, happiness
+        and safety.</p>
+
+    <h3>Inequality</h3>
+
+    <p>I used the Gini coefficient to represent income inequality, one of the major
+        issues in economics. The Gini coefficient represents the distance a country
+        is from being perfectly equal, and the lower its score, the closer it is.
+        The first chart I use shows the development of inequality in recent years
+        in six large, important developed and developing economies. It also shows
+        the number of gaps in the data. Given this, I chose to analyse data for
+        2017, keeping the date close, while trying to maximise the number of 
+        data points. The data below was taken directly off the World Bank website,
+        done through downloading a CSV, uploading it into python and selecting
+        the desired countries. A major issue was its non-standard format, where
+        I had to transpose the data using excel to fix this. You can hover on the chart
+        to see the exact values.</p>
+
+    
 
 <!--Chart 1 -->
 <div class="chart" id="chart1">
     <script>
-      var myChart1 = "charts/chartp_hapi.json";
+      var myChart1 = "charts/chart_ineq.json";
       vegaEmbed('#chart1', myChart1);
     </script>
 </div>
 
-<p> </p>
+<p></p>
+
+</span><a target=”_blank” href="https://colab.research.google.com/drive/1sKXHSWNUmTEWIEY5kJN9tz--66lUyFcm" 
+style="color: #ffffff;">Notebook Link</a>
+
+<h3>Happiness</h3>
+
+    <p>The second chart shows us the happiness of the countries above in 2020.
+        This data is originally from the world happiness report. Which uses several
+        factors such as GDP per capita and generosity in a country to calculate
+        its happiness score. This data was scraped from Wikipedia, using pandas
+        in Python. While Wikipedia is generally regarded as untrustworthy, 
+        if data is verified, it brings major advantages in terms of replicability
+        and automation. As it is regularly updated, the same process can easily
+        be used to update the chart for 2021 when it becomes available on the
+        website, provided it remains accurate. It is also easily replicable
+        for other years, as the scraping process is relatively simple as can be seen
+        in my python notebook below. You can hover on the chart
+        to see the exact values.</p>
+
 <!--Chart 2 -->
 <div class="chart" id="chart2">
     <script>
-      var myChart2 = "charts/chart_ineq.json";
+      var myChart2 = "charts/chartp_hapi.json";
       vegaEmbed('#chart2', myChart2);
     </script>
 </div>
-<p> </p>
+
+<p></p>
+
+</span><a target=”_blank” href="https://colab.research.google.com/drive/1l99Enu8HrMM7ILPBQH9H4kFRzA6Wz97A#scrollTo=hK2AvMNFMrg3" 
+style="color: #ffffff;">Notebook Link</a>
+
+<h3> The relationship between Inequality and Happiness </h3>
+
+<p>My first regression produced surprising results, showing a very low R-squared, showing a very small relationship between inequality and happiness. Given the high numbers of gaps in inequality data, it’s possible that the sample size was simply not large enough to provide accurate results. Another possible explanation is that a high level of omitted variable bias may be taking place, an example of this could be national income, which is correlated with both factors below and may be influencing them. </p>
 
 <!--Chart 3 -->
 <div class="chart" id="chart3">
@@ -55,6 +108,13 @@
     </script>
 </div>
 
+<h3> The relationship between Inequality and Safety </h3>
+
+<p>In my second regression, I used the same dataset for inequality and compared it with the Global Peace Index, which ranks countries’ safety using several factors such as the impact of conflicts if they exist and crime rates such as homicide. I did not include a line of best fit to focus on some interactive features of the chart. I did the regression in python as well but opted to display it in a Vega chart as it looks more cohesive with the other charts. This regression produced an R-squared of 0.107, which can be seen in my python notebook linked below. This is higher than the previous, but still quite low and probably suffers from the same issues as the previous dataset, but likely to a smaller extent. You can hover on the chart
+    to see the exact values</p>
+
+<p>To join the data for both regressions, I had to engage in some cleaning, removing missing values and changing column names in order to merge the files.</p>
+
 <!--Chart 4 -->
 <div class="chart" id="chart4">
     <script>
@@ -62,6 +122,15 @@
       vegaEmbed('#chart4', myChart4);
     </script>
   </div>
+
+  <p></p>
+</span><a target=”_blank” href="https://colab.research.google.com/drive/1QzjV2hAGzjFz2MtA6GkssQgKdQHRjB-e#scrollTo=Hf8dZ03sRkUf" 
+style="color: #ffffff;">Notebook Link for both regressions</a>
+
+
+  <h3> Conclusion </h3>
+
+  <p>In conclusion, I could not establish a correlation between inequality and human wellbeing factors. This though does not disprove that income inequality can harm human wellbeing as this project did not aim to establish causal inference. This is unlikely to be established when comparing macroeconomic factors, without controlling for major factors such as national income. Though this stimulates further work, either exploring impacts of income and other inequalities on human wellbeing through a macro lens, controlling for important factors, or at a more micro-level such as within different businesses. These results though may suggest that inequality may not be as important to happiness or safety as other factors that more closely link to them, such as national income, quality of institutions and culture. </p>
 
 </body>
 <!-- ///////////////////  END BODY //////////////////////////////////// -->
